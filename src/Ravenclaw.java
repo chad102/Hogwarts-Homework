@@ -12,7 +12,16 @@ public class Ravenclaw extends Hogwarts{
         this.creative = creative;
     }
 
-    Ravenclaw student1 = new Ravenclaw("Чжоу Чанг", 23, 19, 83, 22, 53,23);
-    Ravenclaw student2 = new Ravenclaw("Падма Патил", 38, 97, 78, 23, 52,65);
-    Ravenclaw student3 = new Ravenclaw("Маркус Белби", 81, 49, 47, 23, 50,69);
+    @Override
+    public String toString() {
+        return "Ravenclaw{" +
+                "name='" + name + '\'' +
+                ", magicPower=" + magicPower +
+                ", transgressPower=" + transgressPower +
+                ", intelligence=" + intelligence +
+                ", wisdom=" + wisdom +
+                ", wit=" + wit +
+                ", creative=" + creative +
+                '}';
+    }
 }

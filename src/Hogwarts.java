@@ -8,9 +8,6 @@ public class Hogwarts {
         this.magicPower = magicPower;
         this.transgressPower = transgressPower;
     }
-    public static void printStudent() {
-        System.out.println(student1);
-    }
 
     public String getName() {
         return name;
@@ -34,5 +31,19 @@ public class Hogwarts {
 
     public void setTransgressPower(int transgressPower) {
         this.transgressPower = transgressPower;
+    }
+
+    @Override
+    public String toString() {
+        return "Hogwarts{" +
+                "name='" + name + '\'' +
+                ", magicPower=" + magicPower +
+                ", transgressPower=" + transgressPower +
+                '}';
+    }
+
+    public int sumPoints () {
+        return getMagicPower() + getTransgressPower();
+
     }
 }

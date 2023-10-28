@@ -10,7 +10,15 @@ public class Hufflepuff extends  Hogwarts{
         this.faithfulness = faithfulness;
     }
 
-    Hufflepuff student1 = new Hufflepuff("Захария Смит", 23, 19, 1, 2, 3);
-    Hufflepuff student2 = new Hufflepuff("Седрик Диггори", 38, 97, 2, 3, 4);
-    Hufflepuff student3 = new Hufflepuff("Джастин Финч-Флетчли", 81, 49, 3, 4, 5);
+    @Override
+    public String toString() {
+        return "Hufflepuff{" +
+                "name='" + name + '\'' +
+                ", magicPower=" + magicPower +
+                ", transgressPower=" + transgressPower +
+                ", diligence=" + diligence +
+                ", loyalty=" + loyalty +
+                ", faithfulness=" + faithfulness +
+                '}';
+    }
 }

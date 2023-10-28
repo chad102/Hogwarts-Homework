@@ -9,48 +9,22 @@ public class Gryffindor extends Hogwarts {
         this.honor = honor;
         this.brave = brave;
     }
-    Gryffindor student1 = new Gryffindor("Гарри Поттер", 67, 88, 23, 20, 30);
-    Gryffindor student2 = new Gryffindor("Гермиона Грейнджер", 77, 89, 66, 39, 43);
-    Gryffindor student3 = new Gryffindor("Рон Уизли", 56, 22, 91, 40, 54);
 
     public int getNoble() {
         return noble;
-    }
-
-    public void setNoble(int noble) {
-        this.noble = noble;
     }
 
     public int getHonor() {
         return honor;
     }
 
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
-
     public int getBrave() {
         return brave;
     }
 
-    public void setBrave(int brave) {
-        this.brave = brave;
-    }
-
-    public Gryffindor getStudent1() {
-        return student1;
-    }
-
-    public Gryffindor getStudent2() {
-        return student2;
-    }
-
-    public Gryffindor getStudent3() {
-        return student3;
-    }
-
     @Override
     public String toString() {
+        super.toString(); // не понял замечания IDEA по поводу игнорирования родительского метода
         return "Gryffindor{" +
                 "name='" + name + '\'' +
                 ", magicPower=" + magicPower +
@@ -60,4 +34,23 @@ public class Gryffindor extends Hogwarts {
                 ", brave=" + brave +
                 '}';
     }
+
+    public int sumPoints () {
+        super.sumPoints();
+        return sumPoints() + getNoble() + getBrave() + getHonor();
+    }
+
+    public void egualStudent (Gryffindor student1, Gryffindor student2) {
+        if (student1.sumPoints() > student2.sumPoints()) {
+            System.out.println(student1.getName() + " лучший Гриффиндорец, чем " + student2.getName());
+        } else {
+            if (student1.sumPoints() < student2.sumPoints()) {
+                System.out.println(student2.getName() + " лучший Гриффиндорец, чем " + student1.getName());
+            } else {
+                System.out.println("Ничья");
+            }
+        }
+    }
+
+    equals.
 }

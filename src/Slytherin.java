@@ -14,7 +14,17 @@ public class Slytherin extends Hogwarts{
         this.lustForPower = lustForPower;
     }
 
-    Slytherin student1 = new Slytherin("Драко Малфой", 67, 88, 1, 2, 3,44,55);
-    Slytherin student2 = new Slytherin("Грэхэм Монтегю", 77, 89, 2, 3, 4, 89,45);
-    Slytherin student3 = new Slytherin("Грегори Гойл", 56, 22, 3, 4, 5, 34,57);
+    @Override
+    public String toString() {
+        return "Slytherin{" +
+                "name='" + name + '\'' +
+                ", magicPower=" + magicPower +
+                ", transgressPower=" + transgressPower +
+                ", trick=" + trick +
+                ", resolve=" + resolve +
+                ", ambition=" + ambition +
+                ", resourcefulness=" + resourcefulness +
+                ", lustForPower=" + lustForPower +
+                '}';
+    }
 }
