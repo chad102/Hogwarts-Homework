@@ -24,13 +24,13 @@ public class Hufflepuff extends  Hogwarts{
 
     @Override
     public String toString() {
-        return "Hufflepuff{" +
-                "name='" + name + '\'' +
-                ", magicPower=" + magicPower +
-                ", transgressPower=" + transgressPower +
-                ", diligence=" + diligence +
-                ", loyalty=" + loyalty +
-                ", faithfulness=" + faithfulness +
+        return "Факультет Пуффендуй {" +
+                "Имя = '" + name + '\'' +
+                ", Сила магии = " + magicPower +
+                ", Дальность трансгрессии = " + transgressPower +
+                ", Трудолюбие = " + diligence +
+                ", Верность = " + loyalty +
+                ", Честность = " + faithfulness +
                 '}';
     }
 

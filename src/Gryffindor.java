@@ -24,14 +24,13 @@ public class Gryffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        super.toString(); // не понял замечания IDEA по поводу игнорирования родительского метода
-        return "Gryffindor{" +
-                "name='" + name + '\'' +
-                ", magicPower=" + magicPower +
-                ", transgressPower=" + transgressPower +
-                ", noble=" + noble +
-                ", honor=" + honor +
-                ", brave=" + brave +
+        return "Факультет Гриффиндор {" +
+                "Имя = '" + name + '\'' +
+                ", Сила магии = " + magicPower +
+                ", Дальность трансгрессии =" + transgressPower +
+                ", Благородство = " + noble +
+                ", Честь = " + honor +
+                ", Храбрость = " + brave +
                 '}';
     }
 

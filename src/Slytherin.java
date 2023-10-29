@@ -36,15 +36,15 @@ public class Slytherin extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Slytherin{" +
-                "name='" + name + '\'' +
-                ", magicPower=" + magicPower +
-                ", transgressPower=" + transgressPower +
-                ", trick=" + trick +
-                ", resolve=" + resolve +
-                ", ambition=" + ambition +
-                ", resourcefulness=" + resourcefulness +
-                ", lustForPower=" + lustForPower +
+        return "Факультет Слизерин {" +
+                "Имя = '" + name + '\'' +
+                ", Сила магии = " + magicPower +
+                ", Дальность трансгрессии = " + transgressPower +
+                ", Хитрость = " + trick +
+                ", Решительность = " + resolve +
+                ", Амбициозность = " + ambition +
+                ", Находчивость = " + resourcefulness +
+                ", Жажда власти = " + lustForPower +
                 '}';
     }
 
