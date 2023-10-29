@@ -10,6 +10,18 @@ public class Hufflepuff extends  Hogwarts{
         this.faithfulness = faithfulness;
     }
 
+    public void setDiligence(int diligence) {
+        this.diligence = diligence;
+    }
+
+    public void setLoyalty(int loyalty) {
+        this.loyalty = loyalty;
+    }
+
+    public void setFaithfulness(int faithfulness) {
+        this.faithfulness = faithfulness;
+    }
+
     @Override
     public String toString() {
         return "Hufflepuff{" +

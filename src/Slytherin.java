@@ -14,6 +14,26 @@ public class Slytherin extends Hogwarts{
         this.lustForPower = lustForPower;
     }
 
+    public void setTrick(int trick) {
+        this.trick = trick;
+    }
+
+    public void setResolve(int resolve) {
+        this.resolve = resolve;
+    }
+
+    public void setAmbition(int ambition) {
+        this.ambition = ambition;
+    }
+
+    public void setResourcefulness(int resourcefulness) {
+        this.resourcefulness = resourcefulness;
+    }
+
+    public void setLustForPower(int lustForPower) {
+        this.lustForPower = lustForPower;
+    }
+
     @Override
     public String toString() {
         return "Slytherin{" +

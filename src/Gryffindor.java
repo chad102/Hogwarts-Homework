@@ -10,16 +10,16 @@ public class Gryffindor extends Hogwarts {
         this.brave = brave;
     }
 
-    public int getNoble() {
-        return noble;
+    public void setNoble(int noble) {
+        this.noble = noble;
     }
 
-    public int getHonor() {
-        return honor;
+    public void setHonor(int honor) {
+        this.honor = honor;
     }
 
-    public int getBrave() {
-        return brave;
+    public void setBrave(int brave) {
+        this.brave = brave;
     }
 
     @Override

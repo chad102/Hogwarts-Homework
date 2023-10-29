@@ -12,6 +12,22 @@ public class Ravenclaw extends Hogwarts{
         this.creative = creative;
     }
 
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
+    public void setWisdom(int wisdom) {
+        this.wisdom = wisdom;
+    }
+
+    public void setWit(int wit) {
+        this.wit = wit;
+    }
+
+    public void setCreative(int creative) {
+        this.creative = creative;
+    }
+
     @Override
     public String toString() {
         return "Ravenclaw{" +
