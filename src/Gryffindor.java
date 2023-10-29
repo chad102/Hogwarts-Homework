@@ -35,22 +35,19 @@ public class Gryffindor extends Hogwarts {
                 '}';
     }
 
-    public int sumPoints () {
-        super.sumPoints();
-        return sumPoints() + getNoble() + getBrave() + getHonor();
-    }
-
-    public void egualStudent (Gryffindor student1, Gryffindor student2) {
-        if (student1.sumPoints() > student2.sumPoints()) {
-            System.out.println(student1.getName() + " лучший Гриффиндорец, чем " + student2.getName());
+    public void compareGryffindorStudents(Gryffindor student) {
+        int sum1 = this.sumOfCharacterPoints();
+        int sum2 = student.sumOfCharacterPoints();
+        if (sum1 > sum2) {
+            System.out.println(this.getName() + " лучший Гриффиндорец, чем " + student.getName());
+        } else if (sum1 < sum2) {
+            System.out.println(student.getName() + " лучший Гриффиндорец, чем " + this.getName());
         } else {
-            if (student1.sumPoints() < student2.sumPoints()) {
-                System.out.println(student2.getName() + " лучший Гриффиндорец, чем " + student1.getName());
-            } else {
-                System.out.println("Ничья");
-            }
+            System.out.println("Студенты равны");
         }
     }
 
-    equals.
+    public int sumOfCharacterPoints(){
+        return this.noble + this.honor + this.honor;
+    }
 }

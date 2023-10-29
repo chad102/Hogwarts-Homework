@@ -44,6 +44,17 @@ public class Hogwarts {
 
     public int sumPoints () {
         return getMagicPower() + getTransgressPower();
+    }
 
+    public void compareStudent (Hogwarts student) {
+        int sumPoints1 = this.sumPoints();
+        int sumPoints2 = student.sumPoints();
+        if (sumPoints1 > sumPoints2) {
+            System.out.println(this.getName() + " обладает бОльшей мощностью магии, чем " + student.getName());
+        } else if (sumPoints1 < sumPoints2) {
+            System.out.println(student.getName() + " обладает бОльшей мощностью магии, чем " + this.getName());
+        } else {
+            System.out.println(this.getName() + " и " + student.getName() + " равны по силе магии");
+        }
     }
 }

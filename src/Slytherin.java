@@ -27,4 +27,20 @@ public class Slytherin extends Hogwarts{
                 ", lustForPower=" + lustForPower +
                 '}';
     }
+
+    public void compareSlytherinStudents(Slytherin student) {
+        int sum1 = this.sumOfCharacterPoints();
+        int sum2 = student.sumOfCharacterPoints();
+        if (sum1 > sum2) {
+            System.out.println(this.getName() + " лучший Слизеринец, чем " + student.getName());
+        } else if (sum1 < sum2) {
+            System.out.println(student.getName() + " лучший Слизеринец, чем " + this.getName());
+        } else {
+            System.out.println("Студенты равны");
+        }
+    }
+
+    public int sumOfCharacterPoints(){
+        return this.trick + this.resolve + this.ambition + this.resourcefulness + this.lustForPower;
+    }
 }

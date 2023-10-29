@@ -16,7 +16,12 @@ public class Main {
 
         printStudent(student6);
 
-        student1.egualStudent(student2);
+        student2.compareGryffindorStudents(student3);
+        student4.compareSlytherinStudents(student5);
+        student8.compareHufflepuffStudents(student9);
+        student10.compareRavenclawStudents(student12);
+
+        student7.compareStudent(student11);
     }
     public static void printStudent(Hogwarts student) {
         System.out.println(student);
