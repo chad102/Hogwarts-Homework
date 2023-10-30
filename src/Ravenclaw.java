@@ -30,14 +30,14 @@ public class Ravenclaw extends Hogwarts{
 
     @Override
     public String toString() {
-        return "Ravenclaw{" +
-                "name='" + name + '\'' +
-                ", magicPower=" + magicPower +
-                ", transgressPower=" + transgressPower +
-                ", intelligence=" + intelligence +
-                ", wisdom=" + wisdom +
-                ", wit=" + wit +
-                ", creative=" + creative +
+        return "Факультет Когтевран {" +
+                "Имя = '" + name + '\'' +
+                ", Сила магии = " + magicPower +
+                ", Дальность трансгрессии = " + transgressPower +
+                ", Интеллект = " + intelligence +
+                ", Мудрость = " + wisdom +
+                ", Остроумие =" + wit +
+                ", Уровень творчества =" + creative +
                 '}';
     }
 
@@ -45,9 +45,9 @@ public class Ravenclaw extends Hogwarts{
         int sum1 = this.sumOfCharacterPoints();
         int sum2 = student.sumOfCharacterPoints();
         if (sum1 > sum2) {
-            System.out.println(this.getName() + " лучший Слизеринец, чем " + student.getName());
+            System.out.println(this.getName() + " лучший Когтевранец, чем " + student.getName());
         } else if (sum1 < sum2) {
-            System.out.println(student.getName() + " лучший Слизеринец, чем " + this.getName());
+            System.out.println(student.getName() + " лучший Когтевранец, чем " + this.getName());
         } else {
             System.out.println("Студенты равны");
         }
